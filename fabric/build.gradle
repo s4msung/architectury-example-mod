@@ -54,8 +54,8 @@ publishing {
         mavenFabric(MavenPublication) {
             artifact(remapJar.archivePath) {
                 builtBy build
-                artifactId project.archivesBaseName
-                classifier "fabric"
+                artifactId project.archivesBaseName + "-fabric"
+                classifier null
             }
         }
     }

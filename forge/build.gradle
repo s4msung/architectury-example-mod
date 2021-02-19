@@ -59,8 +59,8 @@ publishing {
         mavenForge(MavenPublication) {
             artifact(remapJar.archivePath) {
                 builtBy build
-                artifactId project.archivesBaseName
-                classifier "forge"
+                artifactId project.archivesBaseName + "-forge"
+                classifier null
             }
         }
     }
