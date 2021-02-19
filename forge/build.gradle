@@ -2,6 +2,8 @@ plugins {
     id "com.github.johnrengelman.shadow" version "5.0.0"
 }
 
+apply plugin: "maven-publish"
+
 configurations {
     shadow
 }
@@ -50,4 +52,16 @@ remapJar {
     dependsOn(shadowJar)
     input.set(shadowJar.archivePath)
     classifier "forge"
+}
+
+publishing {
+    publications {
+        mavenForge(MavenPublication) {
+            artifact(remapJar.archivePath) {
+                builtBy build
+                artifactId project.archivesBaseName
+                classifier "forge"
+            }
+        }
+    }
 }

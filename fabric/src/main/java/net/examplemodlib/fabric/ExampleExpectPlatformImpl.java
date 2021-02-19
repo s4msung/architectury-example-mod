@@ -1,7 +1,7 @@
-package net.examplemod.forge;
+package net.examplemodlib.fabric;
 
-import net.examplemod.ExampleExpectPlatform;
-import net.minecraftforge.fml.loading.FMLPaths;
+import net.examplemodlib.ExampleExpectPlatform;
+import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.File;
 
@@ -10,6 +10,6 @@ public class ExampleExpectPlatformImpl {
      * This is our actual method to {@link ExampleExpectPlatform#getConfigDirectory()}.
      */
     public static File getConfigDirectory() {
-        return FMLPaths.CONFIGDIR.get().toFile();
+        return FabricLoader.getInstance().getConfigDir().toFile();
     }
 }
