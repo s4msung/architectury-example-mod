@@ -35,5 +35,9 @@ public class ExampleMod {
         
         System.out.println(ExampleExpectPlatform.getConfigDirectory().getAbsolutePath());
         System.out.println(ExampleModLib.MOD_ID);
+
+        ExampleUsage eu = new ExampleUsage();
+        System.out.println(eu.getId());
+        eu.doAbstract();
     }
 }
