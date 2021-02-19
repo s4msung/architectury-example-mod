@@ -19,7 +19,7 @@ dependencies {
     forge "net.minecraftforge:forge:${rootProject.minecraft_version}-${rootProject.forge_version}"
     // Remove the next line if you don't want to depend on the API
     modCompile "me.shedaniel:architectury-forge:${rootProject.architectury_version}"
-    modCompile "net.examplemodlib:examplemodlib:1.0.0:forge"
+    modCompile "net.examplemodlib:examplemodlib-forge:1.0.0"
 
     implementation(project(path: ":common")) {
         transitive = false
