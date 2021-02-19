@@ -1,5 +1,6 @@
 package net.examplemod;
 
+import net.examplemodlib.ExampleModLib;
 import me.shedaniel.architectury.registry.CreativeTabs;
 import me.shedaniel.architectury.registry.DeferredRegister;
 import me.shedaniel.architectury.registry.Registries;
@@ -33,5 +34,6 @@ public class ExampleMod {
         ITEMS.register();
         
         System.out.println(ExampleExpectPlatform.getConfigDirectory().getAbsolutePath());
+        System.out.println(ExampleModLib.MOD_ID);
     }
 }

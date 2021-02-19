@@ -15,5 +15,7 @@ libs/
 classes/
 .metadata
 .vscode
+.vim
 .settings
 *.launch
+logs/
