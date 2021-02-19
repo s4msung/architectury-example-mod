@@ -10,3 +10,15 @@ dependencies {
 architectury {
     common()
 }
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifact(remapJar.archivePath) {
+                builtBy build
+                artifactId project.archivesBaseName
+                classifier null
+            }
+        }
+    }
+}
