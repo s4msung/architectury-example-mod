@@ -55,4 +55,9 @@ allprojects {
     java {
         withSourcesJar()
     }
+    repositories {
+        maven {
+            url 'https://repo.repsy.io/mvn/gandiber/geckolib'
+        }
+    }
 }

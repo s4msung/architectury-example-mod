@@ -16,6 +16,7 @@ dependencies {
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
     // Remove the next line if you don't want to depend on the API
     modApi "me.shedaniel:architectury-fabric:${rootProject.architectury_version}"
+    modImplementation "software.bernie.geckolib:geckolib-fabric-1.16.5:${rootProject.geckolib_fabric_version}"
 
     implementation(project(path: ":common")) {
         transitive = false
