@@ -10,7 +10,6 @@ import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import software.bernie.geckolib3.GeckoLib;
 
 import java.util.function.Supplier;
 
@@ -33,7 +32,6 @@ public class ExampleMod {
     public static void init() {
         ITEMS.register();
         
-        GeckoLib.initialize();
         System.out.println(ExampleExpectPlatform.getConfigDirectory().getAbsolutePath());
     }
 }
